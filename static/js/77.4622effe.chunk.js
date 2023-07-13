@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkphonebook_frontend=self.webpackChunkphonebook_frontend||[]).push([[77],{5077:function(e,n,o){o.r(n),o.d(n,{default:function(){return h}});var c=o(7689),s="homePage_heroSection__9Zf52",t="homePage_container__KQUO7",a="homePage_title__FzVmN",r=o(3329),h=function(){return(0,r.jsx)("main",{children:(0,r.jsxs)("section",{className:s,children:[(0,r.jsx)("div",{className:t,children:(0,r.jsx)("h1",{className:a,children:"The best app to collect your contacts"})}),(0,r.jsx)(c.j3,{})]})})}}}]);
+//# sourceMappingURL=77.4622effe.chunk.js.map
