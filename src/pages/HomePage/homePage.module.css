@@ -1,0 +1,39 @@
+.heroSection{
+    height: 59vh;
+    margin: 0 auto;
+  
+    padding-top: 118px;
+    padding-bottom: 118px;
+  
+    text-align: center;
+  
+    background-position: center;
+  
+    background-image: linear-gradient(rgba(47, 48, 58, 0.2), rgba(47, 48, 58, 0.2));
+}
+
+.container{
+    padding-right: 15px;
+    padding-left: 15px;    
+}
+
+.title{
+    max-width: 696px;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-top: 100px;
+    
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgb(59, 203, 216);
+
+    background-color: rgba(255, 255, 255, 0.3);
+
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* url('../../../assets/heroBackground.jpeg') */

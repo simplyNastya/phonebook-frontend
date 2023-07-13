@@ -1,0 +1,15 @@
+.heroSection {
+    height: 59vh;
+    margin: 0 auto;
+
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    text-align: center;
+
+    background-position: center;
+
+    background-image: linear-gradient(rgba(47, 48, 58, 0.2), rgba(47, 48, 58, 0.2));
+}
+
+/* url('../../../assets/heroBackground.jpeg') */

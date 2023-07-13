@@ -1,0 +1,42 @@
+.headerSectionContainer{
+    padding-right: 15px;
+    padding-left: 15px;
+
+    background-color: rgba(137, 43, 226, 0.111);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.link:global(.active) {
+    color: rgb(59, 203, 216);
+}
+
+.logo {
+    width: 65px;
+    height: 60px;
+    padding: 5px 5px;
+    color: rgb(59, 203, 216);
+    border-radius: 50%;
+}
+
+.logoText{
+    font-size: 26px;
+    font-weight: 700;
+}
