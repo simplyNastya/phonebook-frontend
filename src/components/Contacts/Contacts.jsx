@@ -32,11 +32,11 @@ const Contacts = () => {
         {filtredContacts.map(({ _id, name, phone, email }) => {
           return (
             <li className={styles.item} key={_id}>
-              <p className={styles.itemName}>
-                {name}: <span className={styles.itemNumber}>{phone}</span>
-                <span> </span>
-                <span className={styles.itemNumber}>{email}</span>
-              </p>
+              <div className={styles.wrapper}>
+                <p className={styles.itemTitle}>{name}</p>
+                <p className={styles.itemText}>{phone}</p>
+                <p className={styles.itemText}>{email}</p>
+              </div>
               <button
                 onClick={() => onDeleteContact(_id)}
                 className={styles.btn}

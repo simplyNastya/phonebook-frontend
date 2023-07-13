@@ -7,7 +7,7 @@ import {
   selectError,
 } from "../../redux/contacts/contacts-selectors";
 import { fetchContacts } from "../../redux/contacts/contacts-operations";
-import { Blocks } from "react-loader-spinner";
+// import { Blocks } from "react-loader-spinner";
 
 import ContactForm from "../../components/ContactForm/ContactForm";
 import Contacts from "../../components/Contacts/Contacts";
@@ -17,7 +17,7 @@ import styles from "./contactsPage.module.css";
 
 const ContactsPage = () => {
   const contacts = useSelector(selectContacts);
-  const isLoading = useSelector(selectIsLoading);
+  // const isLoading = useSelector(selectIsLoading);
   const error = useSelector(selectError);
 
   const dispatch = useDispatch();
@@ -36,8 +36,8 @@ const ContactsPage = () => {
             <h1 style={{ padding: 20 }}>PhoneBook</h1>
             <ContactForm />
 
-            <div className={styles.spiner_box}>
-              <h2 style={{ padding: 20 }}>Contacts</h2>
+            <h2 style={{ padding: 20 }}>Contacts</h2>
+            {/* <div className={styles.spiner_box}>
               {isLoading && (
                 <div className={styles.spiner}>
                   <Blocks
@@ -50,7 +50,7 @@ const ContactsPage = () => {
                   />
                 </div>
               )}
-            </div>
+            </div> */}
             <Filter />
             {contacts.length !== 0 && <Contacts />}
           </div>

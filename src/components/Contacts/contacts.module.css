@@ -10,11 +10,12 @@
     align-items: center;
 }
 
-.itemName {
+.itemTitle {
+    text-transform: capitalize;
     font-weight: 600;
 }
 
-.itemNumber {
+.itemText {
     font-weight: 400;
 }
 
