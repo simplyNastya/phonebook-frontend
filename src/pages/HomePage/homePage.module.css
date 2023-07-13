@@ -9,7 +9,7 @@
   
     background-position: center;
   
-    background-image: linear-gradient(rgba(47, 48, 58, 0.2), rgba(47, 48, 58, 0.2));
+    background-image: linear-gradient(rgba(47, 48, 58, 0.2), rgba(47, 48, 58, 0.2)), url('./heroBackground.jpeg');
 }
 
 .container{

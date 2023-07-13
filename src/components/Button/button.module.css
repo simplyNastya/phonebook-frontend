@@ -1,5 +1,5 @@
 .btn {
-    padding: 5px 10px;
+    padding: 15px 35px;
 
     font-size: 18px;
     font-weight: 500;
@@ -16,4 +16,7 @@
     color: #fff;
     background-color: rgba(59, 203, 216, 0.338);
     border-color: rgb(59, 203, 216);
+
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    transition: transform ease-in 0.5s, box-shadow ease-in-out 0.5s;
 }
