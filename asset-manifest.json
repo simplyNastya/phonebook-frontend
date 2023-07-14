@@ -1,33 +1,34 @@
 {
   "files": {
     "main.css": "/phonebook-frontend/static/css/main.53591925.css",
-    "main.js": "/phonebook-frontend/static/js/main.6f8f7317.js",
-    "static/css/77.5519129f.chunk.css": "/phonebook-frontend/static/css/77.5519129f.chunk.css",
+    "main.js": "/phonebook-frontend/static/js/main.7ba3e1e9.js",
+    "static/css/77.8ae0a32c.chunk.css": "/phonebook-frontend/static/css/77.8ae0a32c.chunk.css",
     "static/js/77.4622effe.chunk.js": "/phonebook-frontend/static/js/77.4622effe.chunk.js",
-    "static/css/592.5da4db42.chunk.css": "/phonebook-frontend/static/css/592.5da4db42.chunk.css",
+    "static/css/592.9e9205c8.chunk.css": "/phonebook-frontend/static/css/592.9e9205c8.chunk.css",
     "static/js/592.f5e22e81.chunk.js": "/phonebook-frontend/static/js/592.f5e22e81.chunk.js",
-    "static/css/24.9da3747f.chunk.css": "/phonebook-frontend/static/css/24.9da3747f.chunk.css",
-    "static/js/24.c84623ad.chunk.js": "/phonebook-frontend/static/js/24.c84623ad.chunk.js",
-    "static/css/325.5ebc6aac.chunk.css": "/phonebook-frontend/static/css/325.5ebc6aac.chunk.css",
-    "static/js/325.67de01a1.chunk.js": "/phonebook-frontend/static/js/325.67de01a1.chunk.js",
-    "static/css/520.9d9f83e6.chunk.css": "/phonebook-frontend/static/css/520.9d9f83e6.chunk.css",
-    "static/js/520.c45f96c6.chunk.js": "/phonebook-frontend/static/js/520.c45f96c6.chunk.js",
+    "static/css/113.58a017f1.chunk.css": "/phonebook-frontend/static/css/113.58a017f1.chunk.css",
+    "static/js/113.79562cba.chunk.js": "/phonebook-frontend/static/js/113.79562cba.chunk.js",
+    "static/css/182.ac679714.chunk.css": "/phonebook-frontend/static/css/182.ac679714.chunk.css",
+    "static/js/182.33af9de5.chunk.js": "/phonebook-frontend/static/js/182.33af9de5.chunk.js",
+    "static/css/520.4f7ba080.chunk.css": "/phonebook-frontend/static/css/520.4f7ba080.chunk.css",
+    "static/js/520.2fe3a7bd.chunk.js": "/phonebook-frontend/static/js/520.2fe3a7bd.chunk.js",
+    "static/media/heroBackground.jpeg": "/phonebook-frontend/static/media/heroBackground.ec957b735d8271821e8e.jpeg",
     "index.html": "/phonebook-frontend/index.html",
     "main.53591925.css.map": "/phonebook-frontend/static/css/main.53591925.css.map",
-    "main.6f8f7317.js.map": "/phonebook-frontend/static/js/main.6f8f7317.js.map",
-    "77.5519129f.chunk.css.map": "/phonebook-frontend/static/css/77.5519129f.chunk.css.map",
+    "main.7ba3e1e9.js.map": "/phonebook-frontend/static/js/main.7ba3e1e9.js.map",
+    "77.8ae0a32c.chunk.css.map": "/phonebook-frontend/static/css/77.8ae0a32c.chunk.css.map",
     "77.4622effe.chunk.js.map": "/phonebook-frontend/static/js/77.4622effe.chunk.js.map",
-    "592.5da4db42.chunk.css.map": "/phonebook-frontend/static/css/592.5da4db42.chunk.css.map",
+    "592.9e9205c8.chunk.css.map": "/phonebook-frontend/static/css/592.9e9205c8.chunk.css.map",
     "592.f5e22e81.chunk.js.map": "/phonebook-frontend/static/js/592.f5e22e81.chunk.js.map",
-    "24.9da3747f.chunk.css.map": "/phonebook-frontend/static/css/24.9da3747f.chunk.css.map",
-    "24.c84623ad.chunk.js.map": "/phonebook-frontend/static/js/24.c84623ad.chunk.js.map",
-    "325.5ebc6aac.chunk.css.map": "/phonebook-frontend/static/css/325.5ebc6aac.chunk.css.map",
-    "325.67de01a1.chunk.js.map": "/phonebook-frontend/static/js/325.67de01a1.chunk.js.map",
-    "520.9d9f83e6.chunk.css.map": "/phonebook-frontend/static/css/520.9d9f83e6.chunk.css.map",
-    "520.c45f96c6.chunk.js.map": "/phonebook-frontend/static/js/520.c45f96c6.chunk.js.map"
+    "113.58a017f1.chunk.css.map": "/phonebook-frontend/static/css/113.58a017f1.chunk.css.map",
+    "113.79562cba.chunk.js.map": "/phonebook-frontend/static/js/113.79562cba.chunk.js.map",
+    "182.ac679714.chunk.css.map": "/phonebook-frontend/static/css/182.ac679714.chunk.css.map",
+    "182.33af9de5.chunk.js.map": "/phonebook-frontend/static/js/182.33af9de5.chunk.js.map",
+    "520.4f7ba080.chunk.css.map": "/phonebook-frontend/static/css/520.4f7ba080.chunk.css.map",
+    "520.2fe3a7bd.chunk.js.map": "/phonebook-frontend/static/js/520.2fe3a7bd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.53591925.css",
-    "static/js/main.6f8f7317.js"
+    "static/js/main.7ba3e1e9.js"
   ]
 }
