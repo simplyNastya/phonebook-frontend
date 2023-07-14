@@ -32,27 +32,16 @@ const ContactsPage = () => {
         <p className={styles.error}>Something went wrong. Try again later.</p>
       ) : (
         <div className={styles.section}>
-          <div className={styles.wrapper}>
-            <h1 style={{ padding: 20 }}>PhoneBook</h1>
-            <ContactForm />
-
-            <h2 style={{ padding: 20 }}>Contacts</h2>
-            {/* <div className={styles.spiner_box}>
-              {isLoading && (
-                <div className={styles.spiner}>
-                  <Blocks
-                    visible={true}
-                    height="80"
-                    width="80"
-                    ariaLabel="blocks-loading"
-                    wrapperStyle={{}}
-                    wrapperClass="blocks-wrapper"
-                  />
-                </div>
-              )}
-            </div> */}
-            <Filter />
-            {contacts.length !== 0 && <Contacts />}
+          <div className={styles.container}>
+            <h1 className={styles.sectionTitle}>PhoneBook</h1>
+            <div className={styles.wrapper}>
+              <ContactForm />
+              <div className={styles.contactsListWrapper}>
+                <h2>Contacts</h2>
+                <Filter />
+                {contacts.length !== 0 && <Contacts />}
+              </div>
+            </div>
           </div>
         </div>
       )}

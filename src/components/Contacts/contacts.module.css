@@ -5,18 +5,30 @@
 .item {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 40px;
     justify-content: space-between;
     align-items: center;
 }
 
+.item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 .itemTitle {
+    margin: 0;
     text-transform: capitalize;
     font-weight: 600;
 }
 
 .itemText {
     font-weight: 400;
+    margin: 0;
 }
 
 .btn {
@@ -35,6 +47,27 @@
     
 .btn:hover {
     color: #fff;
-    background-color: rgba(137, 43, 226, 0.2);
+    background-color: rgba(137, 43, 226, 0.6);
     border-color: rgb(137, 43, 226);
+
+    animation-name: changeBgColor;
+    animation-duration: 1000ms;
+}
+
+@keyframes changeBgColor {
+    0% {
+        background-color: rgba(95, 129, 198, 0.2);
+    }
+
+    50% {
+        background-color: rgba(102, 42, 158, 0.4);
+    }
+
+    75% {
+        background-color: rgba(137, 43, 226, 0.5);
+    }
+
+    100% {
+        background-color: rgba(137, 43, 226, 0.6);
+    }
 }

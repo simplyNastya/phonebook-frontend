@@ -1,33 +1,43 @@
 .section {
-    padding: 50px 15px;
+    padding-top: 20px;
+    padding-bottom: 80px;
     background-color: rgba(255, 250, 205, 0.113);
 }
 
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.sectionTitle {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
 .wrapper {
-    /* width: 450px; */
-    margin: 0 auto;
-
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    background-color: rgba(59, 203, 216, 0.2);
     border: 1px solid;
+}
 
+.contactsListWrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-
-    background-color: rgba(59, 203, 216, 0.2);
-}
-
-.spiner_box {
-    position: relative;
-}
-
-.spiner {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .error {
+    font-weight: 700;
+    font-size: 42px;
     text-align: center;
 }

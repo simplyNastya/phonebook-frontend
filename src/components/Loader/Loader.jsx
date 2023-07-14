@@ -1,5 +1,5 @@
-import { RotatingLines } from 'react-loader-spinner';
-import styles from './loader.module.css';
+import { RotatingLines } from "react-loader-spinner";
+import styles from "./loader.module.css";
 
 const Loader = () => {
   return (
