@@ -1,11 +1,20 @@
 import { useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
+
 import { register } from "../../redux/auth/auth-operations";
+import { getAuth } from "../../redux/auth/auth-selectors";
 import RegisterForm from "../../components/RegisterForm/RegisterForm";
+import Loader from "../../components/Loader/Loader";
 
 import styles from "./registerPage.module.css";
 
 const RegisterPage = () => {
   const dispatch = useDispatch();
+  const { loading } = useSelector(getAuth);
+
+  if (loading) {
+    return <Loader />;
+  }
 
   const onRegister = (data) => dispatch(register(data));
 

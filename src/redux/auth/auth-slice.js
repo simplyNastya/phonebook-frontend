@@ -28,11 +28,11 @@ const authSlice = createSlice({
             state.loading = false;
             state.error = payload;
         })
-        .addCase(login.pending, state => {
-            state.loading = true;
+            .addCase(login.pending, state => {
+                state.loading = true;
             state.error = null;
         })
-            .addCase(login.fulfilled, (state, { payload }) => {
+        .addCase(login.fulfilled, (state, { payload }) => {
             state.loading = false;
             state.user = payload.user;
             state.token = payload.token;

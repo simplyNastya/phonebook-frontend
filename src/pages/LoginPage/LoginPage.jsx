@@ -1,11 +1,20 @@
 import { useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
+
 import { login } from "../../redux/auth/auth-operations";
+import { getAuth } from "../../redux/auth/auth-selectors";
 import LoginForm from "../../components/LoginForm/LoginForm";
+import Loader from "../../components/Loader/Loader";
 
 import styles from "./loginPage.module.css";
 
 const LoginPage = () => {
   const dispatch = useDispatch();
+  const { loading } = useSelector(getAuth);
+
+  if (loading) {
+    return <Loader />;
+  }
 
   const onLogin = (data) => dispatch(login(data));
 

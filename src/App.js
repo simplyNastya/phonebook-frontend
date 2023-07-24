@@ -12,13 +12,13 @@ import UserRoutes from './services/userRoutes'
 export const App = () => {
   return (
     <Provider store={store}>
-      <PersistGate loading={null} persistor={persistor}>
-        <AuthLayout>
+      <PersistGate persistor={persistor}>
           <BrowserRouter basename="phonebook-frontend">
-            <Navbar />
-            <UserRoutes />
+            <AuthLayout>
+              <Navbar />
+              <UserRoutes />
+            </AuthLayout>
           </BrowserRouter>
-        </AuthLayout>
       </PersistGate>
     </Provider>
   );
