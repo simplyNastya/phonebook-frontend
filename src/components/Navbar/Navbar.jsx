@@ -22,12 +22,12 @@ const Navbar = () => {
             </NavLink>
             {!isLogin && <NavbarAuth />}
             {isLogin && (
-              <>
+              <div className={styles.navWrapper}>
                 <NavLink to="/contacts" className={styles.link}>
                   Contacts
-                </NavLink>{" "}
+                </NavLink>
                 <NavbarUser />
-              </>
+              </div>
             )}
           </nav>
         </div>

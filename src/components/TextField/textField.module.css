@@ -1,12 +1,17 @@
+.wrapper {
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .label{
-    margin-right: 15px;
     font-weight: 600;
 }
 
 .input{
     width: 200px;
     padding: 5px;
-    margin-bottom: 20px;
 
     background-color: #fff;
     outline-color: rgba(205, 43, 226, 0.6);

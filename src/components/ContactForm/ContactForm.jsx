@@ -57,6 +57,7 @@ const Form = () => {
               type="text"
               name="name"
               value={name}
+              autoComplete="off"
               onChange={handleInput}
               placeholder="Please enter the name"
               // pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
@@ -72,6 +73,7 @@ const Form = () => {
               type="tel"
               name="phone"
               value={phone}
+              autoComplete="off"
               onChange={handleInput}
               placeholder="Please enter the phone"
               // pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
@@ -86,6 +88,7 @@ const Form = () => {
               type="email"
               name="email"
               value={email}
+              autoComplete="off"
               onChange={handleInput}
               placeholder="Please enter the email"
               // pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/"

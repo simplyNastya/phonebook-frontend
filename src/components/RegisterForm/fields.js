@@ -1,6 +1,6 @@
 const fields = {
     name: {
-        label: 'User name',
+        label: 'Name',
         name: 'name',
         type: 'text',
         required: true,
@@ -8,7 +8,7 @@ const fields = {
     },
 
     email: {
-        label: 'User email',
+        label: 'Email',
         name: 'email',
         type: 'email',
         required: true,
@@ -16,7 +16,7 @@ const fields = {
     },
 
     password: {
-        label: 'User password',
+        label: 'Password',
         name: 'password',
         type: 'password',
         required: true,

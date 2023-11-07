@@ -26,6 +26,8 @@ const ContactsPage = () => {
     dispatch(fetchContacts());
   }, [dispatch]);
 
+  const total = contacts.length;
+
   return (
     <>
       {error ? (
@@ -37,7 +39,7 @@ const ContactsPage = () => {
             <div className={styles.wrapper}>
               {edit ? <EditForm /> : <ContactForm />}
               <div className={styles.contactsListWrapper}>
-                <h2>Contacts</h2>
+                <h2>Contacts ({total})</h2>
                 <Filter />
                 {contacts.length !== 0 && <Contacts />}
               </div>

@@ -15,12 +15,12 @@ const Filter = () => {
   return (
     <div className={styles.container}>
       <div className={styles.inputGroup}>
-        {/* <label className={styles.title}>Find contacts by name</label> */}
         <input
           type="text"
           placeholder="Find contact by name"
           value={filter}
           name="filter"
+          autoComplete="off"
           className={styles.input}
           onChange={onFilter}
         />

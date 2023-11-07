@@ -16,9 +16,15 @@ const LoginForm = ({ onSubmit }) => {
 
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
-      <TextField value={email} onChange={handleChange} {...fields.email} />
+      <TextField
+        value={email}
+        autoComplete="off"
+        onChange={handleChange}
+        {...fields.email}
+      />
       <TextField
         value={password}
+        autoComplete="off"
         onChange={handleChange}
         {...fields.password}
       />
