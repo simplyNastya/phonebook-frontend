@@ -15,9 +15,10 @@ const Filter = () => {
   return (
     <div className={styles.container}>
       <div className={styles.inputGroup}>
-        <label className={styles.title}>Find contacts by name</label>
+        {/* <label className={styles.title}>Find contacts by name</label> */}
         <input
           type="text"
+          placeholder="Find contact by name"
           value={filter}
           name="filter"
           className={styles.input}

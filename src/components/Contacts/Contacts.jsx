@@ -8,6 +8,9 @@ import {
 import { selectFilter } from "../../redux/filter/filter-selectors";
 import styles from "./contacts.module.css";
 
+import { BiSolidEditAlt } from "react-icons/bi";
+import { RiDeleteBin7Line } from "react-icons/ri";
+
 import Button from "../Button/Button";
 
 const Contacts = () => {
@@ -48,18 +51,20 @@ const Contacts = () => {
                 <p className={styles.itemText}>{phone}</p>
                 <p className={styles.itemText}>{email}</p>
               </div>
-              <Button
-                className={styles.contBtn}
-                onClick={() => onToggleEditContact(_id)}
-              >
-                Edit
-              </Button>
-              <Button
-                className={styles.contBtn}
-                onClick={() => onDeleteContact(_id)}
-              >
-                Delete
-              </Button>
+              <div className={styles.itemBtnWrap}>
+                <Button
+                  className={styles.contBtn}
+                  onClick={() => onToggleEditContact(_id)}
+                >
+                  <BiSolidEditAlt />
+                </Button>
+                <Button
+                  className={styles.contBtn}
+                  onClick={() => onDeleteContact(_id)}
+                >
+                  <RiDeleteBin7Line />
+                </Button>
+              </div>
             </li>
           );
         })}

@@ -1,8 +1,13 @@
 .list {
-    padding-left: 0;
+    height: 370px;
+    overflow: scroll;
+
 }
 
 .item {
+    width: 370px;
+    padding: 7px;
+
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
@@ -29,6 +34,20 @@
 .itemText {
     font-weight: 400;
     margin: 0;
+}
+
+.itemBtnWrap {
+    display: flex;
+    gap: 15px;
+}
+
+.contBtn {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
     
 .contBtn:hover {

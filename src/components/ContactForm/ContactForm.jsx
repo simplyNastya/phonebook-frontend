@@ -8,7 +8,6 @@ import Button from "../Button/Button";
 const INITIAL_VALUE = {
   name: "",
   phone: "",
-  email: "",
 };
 
 const Form = () => {
@@ -59,6 +58,7 @@ const Form = () => {
               name="name"
               value={name}
               onChange={handleInput}
+              placeholder="Please enter the name"
               // pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
               title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
               className={styles.input}
@@ -73,6 +73,7 @@ const Form = () => {
               name="phone"
               value={phone}
               onChange={handleInput}
+              placeholder="Please enter the phone"
               // pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
               title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
               className={styles.input}
@@ -86,6 +87,7 @@ const Form = () => {
               name="email"
               value={email}
               onChange={handleInput}
+              placeholder="Please enter the email"
               // pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/"
               title="Email may contain letters, digits, dash and can`t contain spaces, and must contain @"
               className={styles.input}
