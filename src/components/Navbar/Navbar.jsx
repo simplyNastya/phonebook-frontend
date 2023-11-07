@@ -1,15 +1,17 @@
 import { useSelector } from "react-redux";
 import { RiContactsBookLine } from "react-icons/ri";
 
+import { NavLink } from "react-router-dom";
+import useWindowSize from "../../services/hooks/useWindowSize";
 import NavbarAuth from "./NavbarAuth/NavbarAuth";
 import NavbarUser from "./NavbarUser/NavbarUser";
 import { isUserLogin } from "../../redux/auth/auth-selectors";
 
 import styles from "./navbar.module.css";
-import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const isLogin = useSelector(isUserLogin);
+  const { width } = useWindowSize();
 
   return (
     <>
@@ -18,7 +20,9 @@ const Navbar = () => {
           <nav className={styles.nav}>
             <NavLink to="/" className={styles.link}>
               <RiContactsBookLine className={styles.logo} />
-              <p className={styles.logoText}>PhoneBook</p>
+              {width <= 527 ? null : (
+                <p className={styles.logoText}>PhoneBook</p>
+              )}
             </NavLink>
             {!isLogin && <NavbarAuth />}
             {isLogin && (

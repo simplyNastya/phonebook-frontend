@@ -28,11 +28,17 @@
 }
 
 .logo {
-    width: 65px;
-    height: 60px;
+
+    width: 47px;
+    height: 42px;
     padding: 5px 5px;
     color: rgb(59, 203, 216);
     border-radius: 50%;
+
+    @media screen and (min-width: 527px) {
+        width: 65px;
+        height: 60px;
+    }
 }
 
 .logoText{
@@ -43,5 +49,9 @@
 .navWrapper {
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 20px;
+
+    @media screen and (min-width: 527px) {
+        gap: 60px;
+    }
 }

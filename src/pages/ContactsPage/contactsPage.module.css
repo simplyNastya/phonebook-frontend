@@ -18,14 +18,15 @@
     text-align: center;
 }
 
-.wrapper {
-    
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
+.wrapper {   
     background-color: rgba(59, 203, 216, 0.2);
     border: 1px solid;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
 
 .contactsListWrapper {

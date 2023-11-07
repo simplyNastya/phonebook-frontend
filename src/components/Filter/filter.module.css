@@ -9,13 +9,21 @@
 }
 
 .input {
-    width: 370px;
+    width: 270px;
     padding: 7px;
     margin-bottom: 20px;
     background-color: #fff;
     outline-color: rgba(205, 43, 226, 0.6);
 
     border-radius: 5px;
+
+    /* @media screen and (min-width: 800px) {
+        width: 270px;
+    } */
+
+    @media screen and (min-width: 880px) {
+        width: 370px;
+    }
 }
 
 .title{

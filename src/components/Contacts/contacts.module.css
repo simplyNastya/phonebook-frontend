@@ -1,18 +1,22 @@
 .list {
+    width: 270px;
     height: 370px;
     overflow: scroll;
 
+
+    @media screen and (min-width: 880px) {
+        width: 370px;
+    }
 }
 
 .item {
-    width: 370px;
-    padding: 7px;
-
     display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (min-width: 768px) {
+        gap: 40px;
+    }
 }
 
 .item:not(:last-child) {
@@ -38,16 +42,25 @@
 
 .itemBtnWrap {
     display: flex;
-    gap: 15px;
+    gap: 5px;
+
+    @media screen and (min-width: 880px) {
+        gap: 15px;
+    }
 }
 
 .contBtn {
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (min-width: 880px) {
+        width: 45px;
+        height: 45px;
+    }
 }
     
 .contBtn:hover {

@@ -3,22 +3,20 @@
 }
 
 .form{
-    width: 350px;
+    max-width: 350px;
 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+
+    border: 1px solid;
     border-radius: 15px;
     box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
-
-    /* background-color: rgba(137, 43, 226, 0.111); */
 }
 
 .inputGroup{
     display: flex;
     flex-direction: column;
-
-    padding: 15px;
-
-    border: 1px solid;
-    border-radius: 10px;
 }
 
 .label{
@@ -29,13 +27,24 @@
 }
 
 .input{
-    width: 305px;
     padding: 7px;
     margin-bottom: 20px;
     background-color: #fff;
     outline-color: rgba(205, 43, 226, 0.6);
 
     border-radius: 5px;
+
+    @media screen and (min-width: 768px) {
+        width: 220px;
+    }
+
+    @media screen and (min-width: 800px) {
+        width: 250px;
+    }
+
+    @media screen and (min-width: 880px) {
+        width: 305px;
+    }
 }
 
 .addBtn {
