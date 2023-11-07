@@ -1,8 +1,14 @@
 import { useSelector, useDispatch } from "react-redux";
 import { selectContacts } from "../../redux/contacts/contacts-selectors";
 import { fetchDeleteContact } from "../../redux/contacts/contacts-operations";
+import {
+  toggleIsEditing,
+  setSelectedId,
+} from "../../redux/contacts/contacts-slice";
 import { selectFilter } from "../../redux/filter/filter-selectors";
 import styles from "./contacts.module.css";
+
+import Button from "../Button/Button";
 
 const Contacts = () => {
   const contacts = useSelector(selectContacts);
@@ -26,6 +32,11 @@ const Contacts = () => {
     dispatch(fetchDeleteContact(_id));
   };
 
+  const onToggleEditContact = (_id) => {
+    dispatch(toggleIsEditing());
+    dispatch(setSelectedId(_id));
+  };
+
   return (
     <div>
       <ul className={styles.list}>
@@ -37,12 +48,18 @@ const Contacts = () => {
                 <p className={styles.itemText}>{phone}</p>
                 <p className={styles.itemText}>{email}</p>
               </div>
-              <button
+              <Button
+                className={styles.contBtn}
+                onClick={() => onToggleEditContact(_id)}
+              >
+                Edit
+              </Button>
+              <Button
+                className={styles.contBtn}
                 onClick={() => onDeleteContact(_id)}
-                className={styles.btn}
               >
                 Delete
-              </button>
+              </Button>
             </li>
           );
         })}

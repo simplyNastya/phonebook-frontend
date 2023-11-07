@@ -1,18 +1,24 @@
 import { useState, useRef, useEffect } from "react";
-import { useDispatch } from "react-redux";
-import { fetchAddContact } from "../../redux/contacts/contacts-operations";
-import styles from "./contactForm.module.css";
+import {
+  selectContacts,
+  selectSetSelectedId,
+} from "../../redux/contacts/contacts-selectors";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  fetchEditContact,
+  fetchContacts,
+} from "../../redux/contacts/contacts-operations";
+import styles from "./editContactForm.module.css";
 
 import Button from "../Button/Button";
 
-const INITIAL_VALUE = {
-  name: "",
-  phone: "",
-  email: "",
-};
+const EditForm = () => {
+  const contacts = useSelector(selectContacts);
+  const contactId = useSelector(selectSetSelectedId);
 
-const Form = () => {
-  const [value, setValue] = useState({ ...INITIAL_VALUE });
+  const contact = contacts.find((item) => item._id === contactId);
+
+  const [value, setValue] = useState(contact);
 
   const focusRef = useRef(false);
   const dispatch = useDispatch();
@@ -21,8 +27,12 @@ const Form = () => {
     focusRef.current.focus();
   }, []);
 
-  const onAddContact = (data) => {
-    dispatch(fetchAddContact(data));
+  const onUpdateContact = () => {
+    dispatch(fetchEditContact(value))
+      .unwrap()
+      .then(() => {
+        dispatch(fetchContacts());
+      });
   };
 
   const handleInput = ({ currentTarget: { name, value } }) => {
@@ -37,13 +47,7 @@ const Form = () => {
 
     focusRef.current.focus();
 
-    onAddContact(value);
-
-    reset();
-  };
-
-  const reset = () => {
-    setValue({ ...INITIAL_VALUE });
+    onUpdateContact(value);
   };
 
   const { name, email = "", phone } = value;
@@ -91,11 +95,11 @@ const Form = () => {
               className={styles.input}
             />
           </label>
-          <Button className={styles.addBtn}>Add Contact</Button>
+          <Button className={styles.addBtn}>Update Contact</Button>
         </div>
       </form>
     </div>
   );
 };
 
-export default Form;
+export default EditForm;

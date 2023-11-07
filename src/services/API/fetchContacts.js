@@ -9,3 +9,8 @@ export const addContact = data => {
 export const deleteContact = id => {
   return instance.delete(`/api/contacts/${id}`);
 };
+
+export const editContact = (updatedContactData) => {
+  const {_id, ...restOfData} = updatedContactData
+  return instance.put(`/api/contacts/${_id}`, restOfData);
+};

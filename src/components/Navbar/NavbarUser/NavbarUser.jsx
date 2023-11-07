@@ -1,6 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { getUser } from "../../../redux/auth/auth-selectors";
 import { logout } from "../../../redux/auth/auth-operations";
+import Button from "../../Button/Button";
 import styles from "./navbarUser.module.css";
 
 const NavbarUser = () => {
@@ -14,9 +15,9 @@ const NavbarUser = () => {
   return (
     <div className={styles.wrapper}>
       <p className={styles.userName}>{name}</p>
-      <button onClick={onLogout} className={styles.btn}>
+      <Button className={styles.logoutBtn} onClick={onLogout}>
         Logout
-      </button>
+      </Button>
     </div>
   );
 };

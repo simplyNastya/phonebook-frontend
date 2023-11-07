@@ -10,6 +10,7 @@ import Navbar from './components/Navbar/Navbar'
 import UserRoutes from './services/userRoutes'
 
 export const App = () => {
+  document.title = "PhoneBook"
   return (
     <Provider store={store}>
       <PersistGate persistor={persistor}>

@@ -3,13 +3,13 @@ import { useSelector, useDispatch } from "react-redux";
 
 import {
   selectContacts,
-  selectIsLoading,
+  selectIsEditing,
   selectError,
 } from "../../redux/contacts/contacts-selectors";
 import { fetchContacts } from "../../redux/contacts/contacts-operations";
-// import { Blocks } from "react-loader-spinner";
 
 import ContactForm from "../../components/ContactForm/ContactForm";
+import EditForm from "../../components/EditContactForm/EditContactForm";
 import Contacts from "../../components/Contacts/Contacts";
 import Filter from "../../components/Filter/Filter";
 
@@ -17,7 +17,7 @@ import styles from "./contactsPage.module.css";
 
 const ContactsPage = () => {
   const contacts = useSelector(selectContacts);
-  // const isLoading = useSelector(selectIsLoading);
+  const edit = useSelector(selectIsEditing);
   const error = useSelector(selectError);
 
   const dispatch = useDispatch();
@@ -35,7 +35,7 @@ const ContactsPage = () => {
           <div className={styles.container}>
             <h1 className={styles.sectionTitle}>PhoneBook</h1>
             <div className={styles.wrapper}>
-              <ContactForm />
+              {edit ? <EditForm /> : <ContactForm />}
               <div className={styles.contactsListWrapper}>
                 <h2>Contacts</h2>
                 <Filter />
